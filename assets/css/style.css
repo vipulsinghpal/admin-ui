@@ -216,7 +216,10 @@ header {
     padding-bottom: 0.5rem;
 
   }
-  .input :nth-child(2){
+  .input li{
+      display: flex;
+  }
+  .input-li{
       padding-top: 2rem;
   }
   .button{
@@ -225,7 +228,7 @@ header {
     padding-bottom: 2rem;
   }
   .cancel{
-      padding: 0.5rem 1rem;
+      padding: 1rem 1.5rem;
       background-color: blueviolet;
       border: none;
       border-radius: 0.5rem;
@@ -238,9 +241,10 @@ header {
     margin: 2rem 0;
 }
 .modify{
-    padding: 2rem 1rem;
-    border-bottom: 1px solid aqua;
+    margin: 0rem 1rem;
     display: flex;
+    border-bottom: 1px solid aqua;
+    padding-bottom: 2rem;
 }
 .number{
     border: none;
@@ -297,6 +301,120 @@ padding-top: 1.5rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
+.buttons{
+    margin-left: auto;
+}
 .edit-mapping{
 margin-top: 1rem;
+}
+@media (max-width: 1199px) {
+    .table li {
+        padding-right: 1rem;
+    }
+  
+    .total th{
+        padding-right: 0;
+    }
+  
+   
+}
+@media (max-width: 1024px) {
+    .table li label{
+        font-size: 1.2rem;
+    }
+.card-school-info{
+    width: 30%;
+}
+.cards{
+    flex-wrap: wrap;
+}
+.card-school{
+    width: 50%;
+}
+.card-school-type{
+    width: 45%;
+}
+.card-school{
+    width: 50%;
+}
+.card-school-type:nth-child(4) {
+     margin-right: 0; 
+    margin-top: 1rem;
+}
+.card-school-type{
+    width: 45%;
+}
+.card-school:nth-child(1){
+    margin-bottom: 1rem;
+}
+}
+@media (max-width: 991px) {
+    .table{
+        max-width: 75%;
+    flex-wrap: wrap;
+    }
+    .table li{
+        width: 33.33%;
+        padding-top: 0rem;
+        margin-top: 1rem;
+    }
+    .name{
+        padding-top: 0;
+    }
+    @media (max-width: 768px) {
+        .table li{
+            width: 50%;
+        }
+        .card-school, .card-school-type{
+            width: 100%;
+        }
+        .card-school-type{
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        .card-school-type:nth-child(4){
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        .school-numbers{
+            width: 100%;
+        }
+        .total{
+            width: 100%;
+        }
+        .input li{
+            flex-wrap: wrap;
+        }
+        .form{
+            width: 100%;
+        }
+        .form:nth-child(2){
+            margin: 2rem 1rem;
+        }
+}
+}
+@media (max-width: 575px) {
+    .table li{
+        width: 100%;
+    }
+    .table{
+        width: calc(100% - 104px);
+    }
+}
+@media (max-width: 425px) {
+.card-section{
+    flex-wrap: wrap;
+}
+.search-user{
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+}
+.mapped-schools,.edit-mapping,.cancel{
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem;
+}
+.card-layout h4{
+    font-size: 1.2rem;
+}
 }
